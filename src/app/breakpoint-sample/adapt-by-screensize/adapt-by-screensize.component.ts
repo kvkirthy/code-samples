@@ -28,7 +28,7 @@ export class AdaptByScreensizeComponent implements OnInit {
       .subscribe(result => {
         if(result.matches){
           this.isPortrait = true;
-          this.message = 'Turn phone to landscape to see larger image';
+          this.message = 'Turn your device (landscape) to see a larger image';
         }
       });
 
@@ -39,7 +39,7 @@ export class AdaptByScreensizeComponent implements OnInit {
       .subscribe(result => {
         if(result.matches){
           this.isPortrait = false;
-          this.message = 'Turn phone to portrait to see museum timings';
+          this.message = 'Turn your device (portrait) to see museum timings';
         }
       });
   }
