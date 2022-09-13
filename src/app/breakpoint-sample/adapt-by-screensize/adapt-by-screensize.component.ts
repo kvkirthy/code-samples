@@ -22,7 +22,6 @@ export class AdaptByScreensizeComponent implements OnInit {
 
     this.bpObserable
       .observe([
-        Breakpoints.Small,
         '(orientation: portrait)',
       ])
       .subscribe(result => {
