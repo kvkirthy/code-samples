@@ -13,8 +13,16 @@ export class AdaptByScreensizeComponent implements OnInit {
   constructor(private bpObserable: BreakpointObserver) { }
 
   ngOnInit(): void {
+
+    console.log("Is your device portrait?", 
+      this.bpObserable.isMatched('(orientation: portrait)'));
+
+      console.log("Is your device landscape?", 
+      this.bpObserable.isMatched('(orientation: landscape)'));
+
     this.bpObserable
       .observe([
+        Breakpoints.Small,
         '(orientation: portrait)',
       ])
       .subscribe(result => {
