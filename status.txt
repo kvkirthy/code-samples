@@ -1,4 +1,0 @@
-Original version
-Commit-1 added
-Commit-2 added
-Commit-3 added
